@@ -24,7 +24,25 @@ selected = option_menu(
     orientation='horizontal'
 )
 if selected == 'Intro':
-    st.write("Intro of the application")
+    st.write("""
+    🎧📜 Welcome to our Audio Transcription Web App! 🎤🔊
+
+Are you looking for an efficient and accurate way to convert your audio content into text? Look no further! Our innovative web application powered by Python and AssemblyAI simplifies the process of transcribing audio into written form. Whether you're dealing with interviews, lectures, podcasts, or any audio content, our app streamlines the conversion, saving you valuable time and effort.
+
+Key Features:
+
+✨ Seamless Uploading: With a user-friendly interface, effortlessly upload your MP3/MP$ files directly from your local.
+
+🎙️ Efficient Transcription: Our app harnesses the power of OpenAI, a cutting-edge transcription service. OpenAI leverages advanced machine learning algorithms to accurately transcribe spoken words into text, maintaining the nuances and subtleties of the audio.
+
+📝 Instant Results: Experience the speed of modern technology! Within moments, you'll receive the transcribed text output on your screen, ready for review and further use.
+
+How to Use:
+
+Click the "Choose an Audio or Video " button.
+Select your desired audio/video file from your local device.
+Watch as our app works its magic and provides you with a written transcript.
+""")
 elif selected == 'Audio':
     audio = st.file_uploader("Upload an audio file", type=["mp3"])
     if audio is not None:
