@@ -1,8 +1,0 @@
-[server]
-port = 5998
-
-[theme]
-primaryColor="#E694FF"
-backgroundColor="#00172b"
-secondaryBackgroundColor="#0083B8"
-textColor="#FFFFFF"
