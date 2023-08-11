@@ -4,7 +4,6 @@ import openai
 
 
 def auido_to_text(audio):
-    openai.api_key = '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'
     result = openai.Audio.transcribe("whisper-1", audio, verbose=True)
     return result
 
