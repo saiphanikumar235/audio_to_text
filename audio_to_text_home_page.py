@@ -44,6 +44,7 @@ Select your desired audio/video file from your local device.
 Watch as our app works its magic and provides you with a written transcript.
 """)
 elif selected == 'Audio':
+    st.empty()
     selected = option_menu(
         menu_title=None,
         options=['Intro', 'Audio', 'Video'],
@@ -62,6 +63,7 @@ elif selected == 'Audio':
                 'Download the result as text file', result['text']
             )
 elif selected == 'Video':
+    st.empty()
     selected = option_menu(
         menu_title=None,
         options=['Intro', 'Audio', 'Video'],
