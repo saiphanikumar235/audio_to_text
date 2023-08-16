@@ -49,6 +49,9 @@ elif selected == 'Audio':
             result = auido_to_text(audio)
         with st.container():
             st.write(result['text'])
+            st.download_button(
+                'Download the result as text file', result['text']
+            )
 elif selected == 'Video':
     video = st.file_uploader("Upload video file", type=['mp4'])
     if video is not None:
@@ -56,3 +59,6 @@ elif selected == 'Video':
             result = video_to_text(video)
         with st.container():
             st.write(result['text'])
+            st.download_button(
+                'Download the result as text file', result['text']
+            )
