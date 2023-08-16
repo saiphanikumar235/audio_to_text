@@ -45,14 +45,6 @@ Watch as our app works its magic and provides you with a written transcript.
 """)
 elif selected == 'Audio':
     st.empty()
-    selected = option_menu(
-        menu_title=None,
-        options=['Intro', 'Audio', 'Video'],
-        icons=['menu-app', 'music-note', 'file-earmark-play'],
-        menu_icon='cast',
-        default_index=0,
-        # orientation='horizontal'
-    )
     audio = st.file_uploader("Upload an audio file", type=["mp3"])
     if audio is not None:
         with st.spinner("Converting audio to speech...."):
@@ -64,14 +56,6 @@ elif selected == 'Audio':
             )
 elif selected == 'Video':
     st.empty()
-    selected = option_menu(
-        menu_title=None,
-        options=['Intro', 'Audio', 'Video'],
-        icons=['menu-app', 'music-note', 'file-earmark-play'],
-        menu_icon='cast',
-        default_index=0,
-        # orientation='horizontal'
-    )
     video = st.file_uploader("Upload video file", type=['mp4'])
     if video is not None:
         with st.spinner("Converting video to speech...."):
