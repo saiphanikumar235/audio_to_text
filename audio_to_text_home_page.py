@@ -4,13 +4,13 @@ import openai
 
 
 def auido_to_text(audio):
-    openai.api_key = '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'
+    openai.api_key = ''
     result = openai.Audio.transcribe("whisper-1", audio, verbose=True)
     return result
 
 
 def video_to_text(video):
-    openai.api_key = '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'
+    openai.api_key = ''
     result = openai.Audio.transcribe("whisper-1", video, verbose=True)
     return result
 
